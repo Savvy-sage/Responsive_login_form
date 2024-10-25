@@ -13,8 +13,8 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  background-color: rgb(231, 231, 231);
   /* background-color: rgb(231, 231, 231); */
+  background-color: #270778;
 }
 
 header {
@@ -27,19 +27,21 @@ header {
 }
 
 .heading {
-  color: blue;
+  color: white;
 }
 
 .title {
   font-weight: 400;
   letter-spacing: 1.5px;
+  color: white;
 }
 
 .container {
   height: 600px;
   width: 500px;
-  background-color: white;
-  /* backdrop-filter: blur(20px); */
+  /* background-color: white; */
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
   box-shadow: 8px 8px 20px rgb(128, 128, 128);
   position: relative;
   overflow: hidden;
@@ -64,6 +66,7 @@ header {
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  color: white;
 }
 
 .slider {
@@ -112,6 +115,33 @@ header {
 
 .login-box {
   gap: 50px;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  width: 400px;
+}
+
+.input-container span {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(77, 77, 77);
+}
+
+.element {
+  height: 60px;
+  width: 400px;
+  outline: none;
+  border: none;
+  color: rgb(77, 77, 77);
+  background-color: rgb(240, 240, 240);
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 50px; /* Added to prevent text from going under the icon */
+  font-size: 18px;
 }
 
 .signup-box {
@@ -142,4 +172,5 @@ header {
   font-size: 22px;
   border: none;
   cursor: pointer;
+  color: white;
 }

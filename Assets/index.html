@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Sign Up form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <h1 class="heading">Prestige & Pride</h1>
+      <h1 class="heading">Prestige & Royalty</h1>
       <h3 class="title">Enter Your Login Credentials</h3>
     </header>
 
@@ -22,44 +29,61 @@
 
       <!-- Entire form section -->
       <div class="form-section">
-        
         <!-- Login Form -->
         <div class="login-box">
-          <input
-            type="email"
-            class="email element"
-            placeholder="Email Address"
-          />
-          <input
-            type="password"
-            class="password element"
-            placeholder="Password"
-          />
-          <button class="clickbtn">Login</button>
+          <div class="input-container">
+            <input
+              type="email"
+              class="email element"
+              placeholder="Email Address"
+            />
+            <span class="fa-regular fa-envelope"></span>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              class="password element"
+              placeholder="Password"
+            />
+            <span class="fa-regular fa-eye"></span>
+          </div>
+          <button class="clickbtn">Sign In</button>
         </div>
 
         <!-- Sign Up form -->
         <div class="signup-box">
+            <div class="input-container">
           <input
             type="text"
             class="name element"
             placeholder="Enter your name "
           />
-          <input
-            type="email"
-            class="email element"
-            placeholder="Email Address"
-          />
-          <input
-            type="password"
-            class="password element"
-            placeholder="Password"
-          />
-          <input
-            type="password"
-            class="password element"
-            placeholder="Confirm password"
-          />
+          <span class="fa-regular fa-user"></span>
+        </div>
+          <div class="input-container">
+            <input
+              type="email"
+              class="email element"
+              placeholder="Email Address"
+            />
+            <span class="fa-regular fa-envelope"></span>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              class="password element"
+              placeholder="Password"
+            />
+            <span class="fa-regular fa-eye"></span>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              class="password element"
+              placeholder="Confirm password"
+            />
+            <span class="fa-regular fa-eye"></span>
+          </div>
           <button class="clickbtn">Sign Up</button>
         </div>
       </div>
